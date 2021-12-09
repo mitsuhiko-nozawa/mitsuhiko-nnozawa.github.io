@@ -3,13 +3,16 @@
         
         <div class="profile">
             <h1>プロフィール</h1>
-            <h2>氏名: 野沢充彦</h2>
-            <h2>所属: 東京工業大学情報理工学院情報工学科 修士1年</h2>
-            <h2>研究テーマ: 情報検索における検索アルゴリズムに関する研究</h2>
-            <h2>趣味: ランニング、猫、漫画・アニメ</h2>
+            <h2>氏名:<br /> <span class="content">野沢充彦</span></h2>
+            <h2>所属:<br /> <span class="content">東京工業大学情報理工学院情報工学科 修士1年</span></h2>
+            <h2>研究テーマ:<br /> <span class="content">情報検索における検索アルゴリズムに関する研究</span></h2>
+            <h2>趣味:<br /> <span class="content">ランニング、猫、漫画・アニメ</span></h2>
         </div>
         <div class="profile-image">
             <img src="../assets/my_pic.jpg">
+        </div>
+        <div class="clear">
+
         </div>
     </div>
 
@@ -17,9 +20,13 @@
 </template>
 
 <style scoped>
+.profile-wrapper .clear{
+    float: clear;
+    height: 360px;
+}
 
 .profile-wrapper {
-  height: 600px;
+  height: auto;
   padding: 50px 0px;
   background-color: #f7f7f7;
   
@@ -36,6 +43,8 @@
 
 .profile h2{
     margin-left: 150px;
+    margin-top: 10px ; 
+    margin-bottom: 10px ; 
 }
 
 .profile-image{
@@ -49,5 +58,30 @@
     width: 45%;
     margin: 10px;
     
+}
+
+
+@media screen and (max-width:768px){
+    .profile-wrapper{
+        
+        padding: 25px 0px;
+    }
+
+    .profile h1 {
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    .profile h2 {
+        margin-left: 30px;
+        font-size: 16px;
+    }
+    .profile-image img{
+        padding-top: 50px;
+        width: 80%;
+    }
+    .profile h2 .content {
+        font-size: 14px;
+    }
+
 }
 </style>

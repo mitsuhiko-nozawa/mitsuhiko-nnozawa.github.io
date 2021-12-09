@@ -15,14 +15,12 @@
 <style scoped>
 
 .skill-wrapper {
-  height: 100px;
   padding: 50px 0px;
   background-color: #f7f7f7;
   
 }
 
 .skill{
-    float: left;
     width: 100%;
 }
 
@@ -32,7 +30,28 @@
 
 .skill h2{
     margin-left: 150px;
+    margin-top: 10px ; 
+    margin-bottom: 10px ; 
 }
+
+@media screen and (max-width:768px){
+    .skill-wrapper{
+        padding: 25px 35px;
+    }
+
+    .skill h1 {
+        margin-left: 0px;
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+    .skill h2 {
+        margin-left: 0px;
+        font-size: 16px;
+    }
+
+
+}
+
 
 
 </style>
